@@ -1,0 +1,147 @@
+LINUX-DRUCKERASSISTENT 1.0 BETA
+==============================
+TESTANLEITUNG FÜR EXTERNE TESTER
+
+1. ZIEL DES PROGRAMMS
+=====================
+
+Der Linux-Druckerassistent soll Drucker verschiedener
+Hersteller unter Linux Mint und Ubuntu erkennen.
+
+Langfristig soll er passende Treiber suchen, herunterladen
+und nach Zustimmung des Benutzers installieren.
+
+Die aktuelle Beta-Version dient zunächst der Erkennung
+von Druckern und lokal verfügbaren Treibereinträgen.
+
+
+2. SYSTEMVORAUSSETZUNGEN
+========================
+
+Entwickelt und bisher getestet unter Linux Mint 22.3.
+
+Benötigt werden:
+- Python 3
+- CUPS mit den Befehlen lpinfo und lpstat
+- iproute2
+- SNMP-Werkzeuge für die SNMP-Erkennung
+- Netzwerkzugriff für die LAN-Druckersuche
+
+Weitere Abhängigkeiten müssen noch überprüft werden.
+
+
+3. PROGRAMM STARTEN
+===================
+
+Terminal im entpackten Projektordner öffnen.
+
+Folgenden Befehl ausführen:
+
+python3 druckerassistent.py
+
+Das Programm führt die neun vorhandenen
+Erkennungsbausteine nacheinander aus.
+
+
+4. GEWÜNSCHTE TESTS
+===================
+
+USB-DRUCKER:
+- Drucker über USB anschließen.
+- Erkennung über CUPS überprüfen.
+- Erkennung über Linux-USB-Schnittstellen überprüfen.
+- Hersteller und Modell kontrollieren.
+- Verhalten ohne angeschlossenen Drucker testen.
+
+LAN-DRUCKER:
+- Drucker im lokalen Netzwerk suchen.
+- Erkannte IP-Adresse überprüfen.
+- Hersteller und Modell kontrollieren.
+- CUPS- und SNMP-Ergebnisse vergleichen.
+
+WLAN-DRUCKER:
+- Drucker mit demselben lokalen Netzwerk verbinden.
+- Erkennung und Modellinformationen überprüfen.
+- IPP- und DNS-SD-Erkennung testen.
+
+VORHANDENE DRUCKER:
+- Prüfen, ob bereits eingerichtete Drucker angezeigt werden.
+- Sicherstellen, dass bestehende Einstellungen
+  unverändert bleiben.
+
+LOKALE DRUCKERTREIBER:
+- Anzahl der CUPS-Treibereinträge überprüfen.
+- Verhalten bei fehlenden Treibern dokumentieren.
+
+
+5. BEKANNTE EINSCHRÄNKUNGEN
+==========================
+
+- Die USB-Erkennung wurde bisher nicht mit einem
+  tatsächlich angeschlossenen USB-Drucker getestet.
+- Direkte Ethernet-Verbindungen ohne konfigurierte
+  IP-Adresse sind noch nicht vollständig unterstützt.
+- Die Netzwerkdruckersuche deckt noch nicht alle
+  möglichen Drucker und Netzwerkbereiche ab.
+- Ein erreichbarer Port 9100 beweist nicht,
+  dass das Gerät ein Drucker ist.
+- Die automatische Internetsuche nach Treibern
+  ist noch nicht implementiert.
+- Treiberdownload und Treiberinstallation
+  sind noch nicht implementiert.
+- Die Bedienung erfolgt derzeit über das Terminal.
+- Die Unterstützung weiterer Linux-Systeme
+  muss noch getestet werden.
+
+
+6. SICHERHEITSREGELN
+====================
+
+Das Programm soll bestehende Druckereinrichtungen
+nicht verändern.
+
+Treiber dürfen später nur nach ausdrücklicher
+Bestätigung des Benutzers installiert werden.
+
+Bitte Tests zunächst mit nicht produktiv genutzten
+Druckern und in einer geeigneten Testumgebung
+durchführen.
+
+
+7. FEHLER MELDEN
+================
+
+Bitte bei Fehlern folgende Informationen angeben:
+
+- Linux-Distribution und Version
+- Druckerhersteller und Druckermodell
+- Verbindung: USB, LAN oder WLAN
+- Welcher Programmabschnitt betroffen ist
+- Vollständige Fehlermeldung
+- Erwartetes und tatsächliches Verhalten
+- Schritte, mit denen der Fehler wiederholt werden kann
+
+Bitte vor der Weitergabe von Terminalausgaben
+persönliche Angaben, Zugangsdaten und andere
+vertrauliche Informationen entfernen.
+
+
+8. ENTWICKLUNGSSTAND
+====================
+
+Neun Programmbausteine wurden auf einem
+Linux-Mint-22.3-Testcomputer erfolgreich gestartet.
+
+Ein Kyocera FS-1061DN wurde über das lokale
+Netzwerk mittels CUPS und SNMP erkannt.
+
+Ein bereits eingerichteter Drucker wurde erkannt.
+
+Die lokale CUPS-Abfrage lieferte 20075
+Treibereinträge.
+
+Diese Ergebnisse sind keine Bestätigung,
+dass alle Druckermodelle unterstützt werden.
+
+Diese Version ist eine Beta zur technischen Prüfung,
+kein fertiges Installationsprogramm.

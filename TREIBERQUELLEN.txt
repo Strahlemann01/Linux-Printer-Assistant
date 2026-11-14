@@ -1,0 +1,52 @@
+LINUX-DRUCKERASSISTENT 1.0 BETA
+==============================
+
+OFFIZIELLE TREIBERQUELLEN
+=========================
+
+Linux Mint / Ubuntu:
+https://packages.ubuntu.com/
+
+OpenPrinting:
+https://openprinting.github.io/
+
+HP:
+https://developers.hp.com/hp-linux-imaging-and-printing
+
+Brother:
+https://support.brother.com/
+
+Canon:
+https://www.canon-europe.com/support/
+
+Epson:
+https://download.ebz.epson.net/dsc/search/01/search/
+
+Kyocera:
+https://www.kyoceradocumentsolutions.de/de/support/downloads.html
+
+
+REGELN FÜR DIE SPÄTERE TREIBERSUCHE
+===================================
+
+1. Zuerst treiberloses Drucken prüfen (IPP Everywhere).
+2. Danach die Linux-Paketquellen überprüfen.
+3. Anschließend OpenPrinting berücksichtigen.
+4. Falls erforderlich, offizielle Herstellerseiten prüfen.
+5. Hersteller und Druckermodell abgleichen.
+6. Gefundene Treiber und ihre Quellen anzeigen.
+7. Vor Download und Installation Zustimmung einholen.
+8. Vorhandene Drucker nicht ungefragt verändern.
+
+
+ENTWICKLUNGSSTAND
+=================
+
+Die Adressen sind als mögliche Treiberquellen dokumentiert.
+
+Eine automatische Internetsuche, das Herunterladen
+und die Installation von Treibern sind noch nicht
+implementiert.
+
+Diese Funktionen müssen vor der Freigabe entwickelt
+und getestet werden.
