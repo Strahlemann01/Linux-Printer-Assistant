@@ -1,5 +1,5 @@
 # Linux-Printer-Assistant
-An open-source Linux printer detection and diagnostic tool for Linux Mint and Ubuntu, supporting USB and network printer discovery. Beta version – testers and developers welcome.
+An experimental Linux printer detection and diagnostic tool for Linux Mint and Ubuntu, supporting USB and network printer discovery. Beta version – testers and developers welcome.
 # Linux Printer Assistant 1.0 Beta
 
 **A printer detection and diagnostic tool for Linux Mint and Ubuntu.**
