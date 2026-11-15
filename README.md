@@ -85,9 +85,30 @@ Future driver installations are intended to require explicit user approval.
 ## Project Contact
 
 **Andreas Strahlendorf**
-Andreas-Strahlendorf@web.de
+
 Feedback and contributions are welcome through this GitHub repository.
 
 ## License
 
 No open-source license has been selected yet. The repository is publicly available for review, but reuse and redistribution permissions have not yet been granted.
+## Documentation / Dokumentation
+
+Documentation is available in English and German.
+
+### English
+
+- [Testing Guide](docs/en/TESTING_GUIDE.md)
+- [Driver Sources](docs/en/DRIVER_SOURCES.md)
+
+### Deutsch
+
+- [Testanleitung](docs/de/TESTANLEITUNG.md)
+- [Treiberquellen](docs/de/TREIBERQUELLEN.md)
+
+### Testing Help Wanted
+
+We welcome feedback from Linux developers and testers, especially those who can test physical USB printers.
+
+USB detection has not yet been verified with a real USB printer.
+
+Please report test results and suggestions through [GitHub Issues](https://github.com/Strahlemann01/Linux-Printer-Assistant/issues).
