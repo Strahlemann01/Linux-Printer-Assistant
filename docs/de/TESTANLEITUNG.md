@@ -21,17 +21,55 @@ Wir suchen freiwillige Tester und Entwickler, die das Programm auf Fehler, Kompa
 
 Fehlende Programme können einzelne Funktionen beeinträchtigen.
 
-### 3. Programm starten
+### 3. Installation und Programmstart
 
-Das GitHub-Projekt herunterladen und entpacken.
+Diese Anleitung richtet sich an erfahrene Linux-Anwender,
+Tester und Entwickler.
 
-Anschließend ein Terminal im Projektordner öffnen und folgenden Befehl ausführen:
+Getestete Entwicklungsumgebung: Linux Mint 22.3.
 
-`python3 druckerassistent.py`
+#### Benötigte Systemwerkzeuge installieren
 
-Um ein Testprotokoll zu erstellen:
+```bash
+sudo apt update
+sudo apt install git python3 cups-client cups-ipp-utils iproute2 avahi-utils snmp
+```
 
-`python3 testprotokoll.py`
+Ein funktionierendes CUPS-System wird vorausgesetzt.
+
+#### Projekt herunterladen
+
+```bash
+git clone https://github.com/Strahlemann01/Linux-Printer-Assistant.git
+cd Linux-Printer-Assistant
+```
+
+#### Druckerassistent starten
+
+```bash
+python3 druckerassistent.py
+```
+
+#### Diagnoseprotokoll erstellen
+
+```bash
+python3 testprotokoll.py
+```
+
+#### Hinweise
+
+Linux Printer Assistant 1.0 Beta ist eine experimentelle
+Software zur Druckererkennung und Fehlerdiagnose.
+
+Eine automatische Installation von Druckertreibern
+ist noch nicht implementiert.
+
+Die Software befindet sich in der Testphase.
+Fehlerberichte und Verbesserungsvorschläge
+sind ausdrücklich willkommen.
+
+Bitte Diagnoseprotokolle vor einer Veröffentlichung
+auf vertrauliche Informationen überprüfen.
 
 ### 4. USB-Drucker testen
 
