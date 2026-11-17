@@ -89,8 +89,8 @@ Future driver installations are intended to require explicit user approval.
 Feedback and contributions are welcome through this GitHub repository.
 
 ## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-No open-source license has been selected yet. The repository is publicly available for review, but reuse and redistribution permissions have not yet been granted.
 ## Documentation / Dokumentation
 
 Documentation is available in English and German.
