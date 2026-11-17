@@ -82,8 +82,13 @@ The current beta performs printer discovery and diagnostic checks. It does not i
 
 Future driver installations are intended to require explicit user approval.
 
-## Project Contact
+## AI Assistance
 
+This project was initiated by a Linux Mint beginner with no programming experience and developed with the assistance of OpenAI ChatGPT.
+
+The goal is to make printer detection and troubleshooting easier for Linux beginners.
+
+## Project Contact
 **Andreas Strahlendorf**
 
 Feedback and contributions are welcome through this GitHub repository.
